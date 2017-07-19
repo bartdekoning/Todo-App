@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <title>To Do App</title>
+</head>
+<body>
+
+
+    <div class="container" id="wrapper">
+        <header>
+            <h1>What I need to do today:</h1>
+        </header>
+        <ul>
+
+            <li id="todos" v-for="todo in todos" :class="{done: isComplete(todo)}">
+                <input type="checkbox" @click="done" v-model="todo.complete">
+                <p @dblclick="toggleEdit(todo)">{{todo.text}}</p>
+                <p class="pointer" @click="removeTodo(todo)">x</p>
+            </li>
+
+        </ul>
+
+
+        <form>
+
+            <button class="pointer" @click="toggleForm" >+</button>
+            <button class="pointer" @click="removeAll" >Delete all</button>
+
+            <div :class="{ active: newIsActive }">
+                <input class="input" type="text" ref="input" @keyup.enter="addTodo" :placeholder="info" v-model="newTodo">
+                <input class="pointer" type="submit" value="Add" @click="addTodo">
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/vue@2.4.1"></script>
+    <script src="main.js"></script>
+</body>
+</html>
