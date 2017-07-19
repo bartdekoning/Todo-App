@@ -6,7 +6,7 @@ Techniek: HTML / CSS / JS, VueJS
 
 ## To-do webapp user stories:
 
-###MUST HAVE:
+### MUST HAVE:
 __done__ Als gebruiker wil ik to-do’s kunnen aanmaken.
 __done__ Als gebruiker wil ik to-do’s kunnen afvinken.
 __done__ Als gebruiker wil ik to-do’s kunnen verwijderen.
