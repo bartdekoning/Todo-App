@@ -8,13 +8,16 @@ Techniek: HTML / CSS / JS, VueJS
 
 ### MUST HAVE:
 __done__ Als gebruiker wil ik to-do’s kunnen aanmaken.
+
 __done__ Als gebruiker wil ik to-do’s kunnen afvinken.
+
 __done__ Als gebruiker wil ik to-do’s kunnen verwijderen.
 
 [Wireframe](https://xd.adobe.com/view/a3f86d92-dde1-441e-96b5-7640035a4cb0)
 
 ### SHOULD HAVE:
 Als gebruiker wil ik to-do’s kunnen aanpassen.
+
 __done__ Als gebruiker wil ik alle to-do’s in één keer verwijderen.
 
 ### COULD HAVE:
